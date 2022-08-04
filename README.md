@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project/webside link: [redux foods app](https://redux-foods.netlify.app/).
+This project/webside link: [ foods app](https://redux-foods.netlify.app/)
 
 ## Introduction :
 

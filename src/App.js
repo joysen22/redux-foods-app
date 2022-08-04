@@ -55,7 +55,7 @@ function App() {
               : "hidden"
           }
         >
-          <div className=" w-fit  mx-auto rounded bg-neutral-50 p-4  h-2/4 overflow-scroll   shadow-lg shadow-neutral-300  sm:mx-0 cursor-pointer">
+          <div className=" w-fit  mx-auto rounded bg-neutral-50 p-2 sm:p-4  h-2/4 overflow-scroll   shadow-lg shadow-neutral-300  sm:mx-0 cursor-pointer">
             <div className="icon-close relative">
               <GrClose
                 onClick={() => setModelShow(false)}
@@ -68,13 +68,13 @@ function App() {
               alt="img"
             />
             <p className=" mt-4 font-normal">
-              {modelData?.strInstructions?.slice(0, 400)}
+              {modelData?.strInstructions?.slice(0, 380)}
             </p>
           </div>
         </div>
       )}
       {/* models box end */}
-      <div className="container flex flex-col gap-8 items-center sm:flex-none mt-20 p-8 sm:gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  sm:mx-auto">
+      <div className="container flex flex-col gap-8 items-center sm:flex-none mt-20 p-8 sm:gap-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  sm:mx-auto sm:p-8">
         {data?.meals?.length > 0 &&
           data?.meals?.map((food) => {
             return (
