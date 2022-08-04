@@ -55,11 +55,11 @@ function App() {
               : "hidden"
           }
         >
-          <div className=" w-fit  mx-auto rounded bg-neutral-50 p-4  h-fit   shadow-lg shadow-neutral-300  sm:mx-0 cursor-pointer">
+          <div className=" w-fit  mx-auto rounded bg-neutral-50 p-4  h-2/4 overflow-scroll   shadow-lg shadow-neutral-300  sm:mx-0 cursor-pointer">
             <div className="icon-close relative">
               <GrClose
                 onClick={() => setModelShow(false)}
-                className=" absolute right-2 top-2  font-medium text-2xl"
+                className=" absolute right-2 top-2 pl-2 font-medium text-3xl"
               />
             </div>
             <img
@@ -68,7 +68,7 @@ function App() {
               alt="img"
             />
             <p className=" mt-4 font-normal">
-              {modelData?.strInstructions?.slice(0, 500)}
+              {modelData?.strInstructions?.slice(0, 400)}
             </p>
           </div>
         </div>
